@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio - Nivetha M</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #84a6e9;
+        }
+        header {
+            background-color: #941919;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 75%;
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="photo.jpg" alt="Nivetha M's Profile Picture" class="profile-picture">
+            <h1>Nivetha M</h1>
+            <p>Data Analyst</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>Passionate data analyst with skills in Python, SQL, and data visualization.
+                Eager to apply my analytical skills in a professional setting and continue learning in the field of data science.</p>
+        </div>
+    </section>
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>II BSc, Data Science - Bharathidasan University (Ongoing)</p>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
+                <li>SQL & Database Management</li>
+                <li>Machine Learning Basics</li>
+                <li>Excel & Statistics</li>
+            </ul>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="blob:https://web.whatsapp.com/f2de8364-55cf-425a-88f8-5d1e4d0b114e" target="_blank">Project 1</a></li>
+                <li><a href="blob:https://web.whatsapp.com/0246135f-1893-4ccf-8b0d-915f41afdcae" target="_blank">Project 2</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="resume">
+        <div class="section-content">
+            <center>
+                <h2>Resume</h2>
+                <a href="https://drive.google.com/file/d/1l-_cIrlanDtjb-Hdq3jOIAspC4VV3OZT/view?usp=sharing" target="_blank" class="download-button">Download CV</a>
+            </center>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Nivetha M</p>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
